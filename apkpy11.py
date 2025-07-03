@@ -5,6 +5,10 @@ from tensorflow.keras.preprocessing import image
 from googletrans import Translator
 import numpy as np
 from PIL import Image
+import streamlit as st
+import tensorflow as tf
+
+st.write("TensorFlow version:", tf.__version__)
 
 # Load model
 model = tf.keras.models.load_model("alatmusiktradnobg.keras")
